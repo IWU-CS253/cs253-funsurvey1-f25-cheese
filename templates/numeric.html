@@ -14,9 +14,11 @@
         {{ value_counts|safe }}
     </div>
 
-    <div class = "chart">
-    <h2 class="subtitle">Chart</h2>
-    <img src="{{ chart }}" alt="Count Plot {{ title }}">
+    <div class ="card">
+    <img class="card-img-top" src="{{ chart }}" alt="Count Plot {{ title }}">
+        <div class="card-img-overlay">
+            <h2 class="card-title display-5">Chart</h2>
+        </div>
     </div>
 
 {% endblock %}
